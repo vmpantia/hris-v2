@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Employee";
+}
+
+<div class="cstm-page-header">
+    <div class="info">
+        <i class="fa fa-user"></i>
+        <label class="value">Employee</label>
+    </div>
+    <div class="button">
+        <a class="btn btn-primary">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Add New
+        </a>
+    </div>
+</div>
+
+<div class="cstm-page-content">
+    <table id="employeeTable" class="table table-bordered table-striped" style="width:100%;">
+        <thead>
+            <tr>
+                <td>Action</td>
+                <td>Employee ID</td>
+                <td>Name</td>
+                <td>Birthdate</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.css" />
+
+@section scripts{
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.js"></script>
+
+    <script src="~/Scripts/Views/Employee.js"></script>
+}

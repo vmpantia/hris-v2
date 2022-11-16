@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="cstm-main-header">
+        <div>
+            <img class="logo" src="~/Images/hrislogo.png" />
+        </div>
+    </div>
+    <div class="cstm-main-sidebar">
+        <div>
+            <ul>
+                <li>
+                    <div class="cstm-main-menu-button">
+                        <div class="text">
+                            Menu
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="cstm-main-side-button" href="@Url.Action("","Home")">
+                        <div class="icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <label class="text">Home</label>
+                    </a>
+                </li>
+                <li>
+                    <a class="cstm-main-side-button" href="@Url.Action("","Employee")">
+                        <div class="icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <label class="text">Employee</label>
+                    </a>
+                </li>
+                <li>
+                    <a class="cstm-main-side-button" href="@Url.Action("","Home")">
+                        <div class="icon">
+                            <label class="fa fa-sliders"></label>
+                        </div>
+                        <label class="text">Settings</label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cstm-main-content">
+
+        @RenderBody()
+    </div>
+    <div class="cstm-main-footer">
+        <b>HRIS V2</b>
+    </div>
+
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts", false)
+
+</body>
+</html>

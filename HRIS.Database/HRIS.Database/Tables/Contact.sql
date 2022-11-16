@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Contact]
+(
+	[InternalID] UNIQUEIDENTIFIER NOT NULL FOREIGN KEY REFERENCES Employee(InternalID),
+	[Value] VARCHAR(50) NOT NULL PRIMARY KEY,
+	[Type] INT NOT NULL,
+	[IsPrimaryFlag] INT NOT NULL,
+	[CreatedDate] DATETIME NOT NULL,
+	[CreatedBy] UNIQUEIDENTIFIER NULL,
+	[ModifiedDate] DATETIME NULL,
+	[ModifiedBy] UNIQUEIDENTIFIER 
+)

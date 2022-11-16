@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Request]
+(
+	[RequestID] VARCHAR(13) NOT NULL PRIMARY KEY,
+	[FunctionID] VARCHAR(5) NOT NULL,
+	[RequestStatus] VARCHAR(2) NOT NULL,
+	[CreatedDate] DATETIME NOT NULL,
+	[CreatedBy] UNIQUEIDENTIFIER NULL,
+	[ModifiedDate] DATETIME NULL,
+	[ModifiedBy] UNIQUEIDENTIFIER NULL
+)

@@ -1,0 +1,137 @@
+﻿.cstm-main-header {
+    top: 0;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+    z-index: 100;
+}
+    .cstm-main-header .logo {
+        margin-left: 35px;
+        height: 70px;
+        width: 150px;
+    }
+
+.cstm-main-footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-top: 1px solid gainsboro;
+    z-index: 100;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cstm-main-content {
+    margin-left: 230px;
+    margin-top: 70px;
+    padding: 10px 20px 20px 20px;
+    color: #2d3436;
+}
+
+.cstm-main-sidebar {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    background-color: white;
+    overflow: auto;
+    padding: 10px;
+}
+    .cstm-main-sidebar ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+.cstm-main-side-button {
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    display: inline-flex;
+    width: 100%;
+    font-size: 13px;
+    color: #2d3436;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+    .cstm-main-side-button:hover {
+        background-color: whitesmoke;
+        text-decoration: none;
+        color: #2d3436;
+    }
+    .cstm-main-side-button:focus {
+        background-color: whitesmoke;
+        text-decoration: none;
+        color: #2d3436;
+    }
+    .cstm-main-side-button .icon {
+        width: 25px;
+    }
+
+.cstm-main-menu-button {
+    padding: 5px 15px 5px 15px;
+    display: inline-flex;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.cstm-page-content {
+
+}
+
+.cstm-page-header {
+    display:inline-flex;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+    .cstm-page-header .info {
+        width: 50%;
+    }
+    .cstm-page-header .info .value {
+        margin-left: 10px;
+    }
+    .cstm-page-header .button {
+        width: 50%;
+    }
+    .cstm-page-header .button a {
+        float: right;
+    }
+
+
+.cstm-page-table-button {
+    border-radius: 5px;
+    padding: 4px 7px 4px 7px;
+    display: inline-flex;
+    font-size: 10px;
+    color: #2d3436;
+    text-decoration: none;
+}
+    .cstm-page-table-button:hover {
+        text-decoration: none;
+    }
+    .cstm-page-table-button:focus {
+        background-color: gainsboro;
+        text-decoration: none;
+        color: #2d3436;
+    }
+    .cstm-page-table-button .icon {
+        width: 15px;
+    }
+
+.edit {
+    background-color: rgb(13,110,253);
+    color: white;
+}
+    .edit:hover {
+        background-color: rgb(11,94,215);
+        color: white;
+    }
+    .edit:focus {
+        background-color: rgb(11,94,215);
+        color: white;
+    }
